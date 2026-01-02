@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>明心见性 | 科技与传统融合的个人空间</title>
+    <title>骆泰宇 | 电子信息工程师</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
@@ -60,7 +60,7 @@
             padding: 0 20px;
         }
 
-        /* 导航栏 - 融合科技与中式元素 */
+        /* 导航栏 */
         header {
             position: fixed;
             top: 0;
@@ -165,7 +165,7 @@
             color: var(--primary-color);
         }
 
-        /* 英雄区域 - 科技与中式融合 */
+        /* 英雄区域 */
         .hero {
             padding: 180px 0 120px;
             position: relative;
@@ -234,9 +234,30 @@
         .hero-subtitle {
             font-size: 1.4rem;
             color: #555;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             font-weight: 300;
             line-height: 1.8;
+        }
+
+        .hero-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .info-item i {
+            margin-right: 10px;
+            color: var(--primary-color);
+            font-size: 1.3rem;
         }
 
         .highlight {
@@ -351,7 +372,7 @@
             margin: 0 auto;
         }
 
-        /* 关于我 */
+        /* 关于我/教育背景 */
         .about-content {
             display: flex;
             align-items: center;
@@ -394,6 +415,42 @@
             margin-bottom: 20px;
             color: var(--primary-color);
             font-family: var(--calligraphy-font);
+        }
+
+        .education-details {
+            margin-top: 30px;
+        }
+
+        .education-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .edu-school {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+
+        .edu-degree {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .edu-details {
+            color: #666;
+            line-height: 1.8;
         }
 
         .about-image {
@@ -510,6 +567,24 @@
             font-family: var(--calligraphy-font);
         }
 
+        .skill-list {
+            list-style-type: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+        }
+
         /* 项目部分 */
         .projects-grid {
             display: grid;
@@ -571,10 +646,56 @@
             padding: 25px;
         }
 
-        .project-info h3 {
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             margin-bottom: 15px;
+        }
+
+        .project-info h3 {
             color: var(--dark-color);
             font-family: var(--calligraphy-font);
+            font-size: 1.6rem;
+        }
+
+        .project-role {
+            background-color: rgba(42, 92, 170, 0.1);
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .project-duration {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .project-description {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .project-tasks {
+            list-style-type: none;
+            margin-top: 15px;
+        }
+
+        .project-tasks li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .project-tasks li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
         }
 
         .project-tags {
@@ -592,6 +713,50 @@
             margin-right: 8px;
             margin-bottom: 8px;
             font-weight: 500;
+        }
+
+        /* 奖项部分 */
+        .awards-section {
+            background-color: rgba(232, 185, 35, 0.03);
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .award-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .award-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        .award-org {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .award-date {
+            color: #888;
+            font-size: 0.9rem;
         }
 
         /* 联系部分 */
@@ -791,6 +956,10 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .awards-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* 自定义滚动条 */
@@ -874,7 +1043,7 @@
     <div class="loader" id="loader">
         <div class="loader-content">
             <div class="loader-spinner"></div>
-            <div class="loader-logo">明心见性</div>
+            <div class="loader-logo">骆泰宇</div>
             <p>科技与传统交融中...</p>
         </div>
     </div>
@@ -883,15 +1052,16 @@
     <header id="header">
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo"><i class="fas fa-code"></i>明心见性</a>
+                <a href="#" class="logo"><i class="fas fa-microchip"></i>骆泰宇</a>
                 <div class="menu-toggle" id="menuToggle">
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home">首页</a></li>
-                    <li><a href="#about">关于我</a></li>
-                    <li><a href="#skills">技能</a></li>
-                    <li><a href="#projects">项目</a></li>
+                    <li><a href="#about">教育背景</a></li>
+                    <li><a href="#skills">技能专长</a></li>
+                    <li><a href="#projects">项目经历</a></li>
+                    <li><a href="#awards">奖项荣誉</a></li>
                     <li><a href="#contact">联系我</a></li>
                 </ul>
             </nav>
@@ -904,133 +1074,265 @@
         <div class="container">
             <div class="hero-content">
                 <div class="chinese-seal"></div>
-                <h1>明<span class="highlight">心</span>见性</h1>
-                <p class="hero-subtitle">融合<span class="highlight">现代科技</span>与<span class="highlight">传统智慧</span>，探索数字世界的无限可能。<br>我是张明，一名致力于将科技创新与人文精神相结合的全栈开发者。</p>
+                <h1>骆<span class="highlight">泰宇</span></h1>
+                <p class="hero-subtitle">电子信息工程专业 | 嵌入式系统开发者<br>融合<span class="highlight">现代电子技术</span>与<span class="highlight">传统设计智慧</span>，创造智能解决方案。</p>
+                
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>广东工业大学 | 电子信息工程</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-star"></i>
+                        <span>GPA: 3.63 | 专业前20%</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+86 13539820153</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>2689539687@qq.com</span>
+                    </div>
+                </div>
+                
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn">探索我的项目</a>
+                    <a href="#projects" class="btn">查看我的项目</a>
                     <a href="#contact" class="btn btn-outline">与我联系</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 关于我 -->
+    <!-- 教育背景 -->
     <section id="about">
         <div class="container">
             <div class="section-title">
-                <h2>关于我</h2>
-                <p class="section-subtitle">在代码世界中探索传统智慧，在创新中寻找平衡与和谐</p>
+                <h2>教育背景</h2>
+                <p class="section-subtitle">扎实的理论基础与持续的学习能力</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>全栈开发者 & 技术哲思者</h3>
-                    <p>我拥有8年全栈开发经验，深谙现代技术栈，同时深受中国传统文化影响。我相信最好的技术解决方案应如同中国园林设计一般，既注重功能性，又追求美学与和谐。</p>
-                    <p>我的技术哲学融合了<strong>道家"道法自然"</strong>的思想与敏捷开发原则，追求简洁、高效、可维护的代码。我相信技术不仅是工具，更是连接过去与未来的桥梁。</p>
-                    <p>在GitHub上，我不仅分享代码，更分享对技术与人文交融的思考。我维护的开源项目旨在将传统美学融入现代用户体验设计中。</p>
-                    <a href="https://github.com/yourusername" target="_blank" class="btn">访问我的GitHub</a>
+                    <h3>广东工业大学</h3>
+                    <p>电子信息工程专业本科，专注于模拟/数字电路设计、嵌入式系统开发与信号处理技术，具备扎实的硬件基础与创新实践能力。</p>
+                    
+                    <div class="education-details">
+                        <div class="education-item">
+                            <div class="edu-header">
+                                <div class="edu-school">广东工业大学</div>
+                                <div class="edu-degree">本科</div>
+                            </div>
+                            <div class="edu-details">
+                                <p><strong>电子信息工程专业</strong> | GPA: 3.63 (专业前20%)</p>
+                                <p><strong>相关课程</strong>: 模拟电子技术、数字电子技术、信号与系统、电路分析、C语言程序设计、单片机原理与应用、嵌入式系统设计等</p>
+                                <p><strong>时间</strong>: 2021年9月 - 2025年6月</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <h4>专业技能概述</h4>
+                        <p>具备扎实的硬件设计基础，熟练掌握模拟/数字电路分析与设计，精通STM32等单片机开发，熟悉Multisim、AD、Cadence等EDA工具，能够使用Matlab/Simulink进行电路仿真与分析。</p>
+                    </div>
                 </div>
                 <div class="about-image">
                     <div class="profile-img-container">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="个人照片" class="profile-img">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="骆泰宇" class="profile-img">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 技能 -->
+    <!-- 技能专长 -->
     <section id="skills" class="skills-section">
         <div class="container">
             <div class="section-title">
-                <h2>技术技能</h2>
-                <p class="section-subtitle">融合现代前沿技术与传统设计原则，打造平衡和谐的解决方案</p>
+                <h2>技能专长</h2>
+                <p class="section-subtitle">硬件与软件相结合的综合技术能力</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fab fa-js-square"></i>
-                    <h3>前端开发</h3>
-                    <p>精通HTML5, CSS3, JavaScript(ES6+), TypeScript。熟练使用React, Vue.js等现代前端框架，注重用户体验与界面美学。</p>
+                    <i class="fas fa-microchip"></i>
+                    <h3>硬件设计</h3>
+                    <ul class="skill-list">
+                        <li>模拟/数字电路分析与设计</li>
+                        <li>单片机开发与调试（STM32系列）</li>
+                        <li>PCB设计与Layout</li>
+                        <li>传感器接口与信号调理</li>
+                        <li>电源设计与功率管理</li>
+                    </ul>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>后端架构</h3>
-                    <p>熟悉Node.js, Express, Python, Django, Go等后端技术。擅长构建高性能、可扩展的RESTful API和微服务架构。</p>
+                    <i class="fas fa-code"></i>
+                    <h3>软件开发</h3>
+                    <ul class="skill-list">
+                        <li>C/C++嵌入式编程</li>
+                        <li>Python数据处理与脚本</li>
+                        <li>Matlab/Simulink仿真</li>
+                        <li>算法设计与优化</li>
+                        <li>RTOS实时操作系统</li>
+                    </ul>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>数据科学</h3>
-                    <p>精通MySQL, PostgreSQL, MongoDB, Redis等数据库系统，能够根据业务需求设计高效的数据存储和处理方案。</p>
+                    <i class="fas fa-tools"></i>
+                    <h3>开发工具</h3>
+                    <ul class="skill-list">
+                        <li>Multisim电路仿真</li>
+                        <li>Altium Designer (AD)</li>
+                        <li>Cadence设计工具</li>
+                        <li>Keil/IAR开发环境</li>
+                        <li>Git版本控制</li>
+                    </ul>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-palette"></i>
-                    <h3>设计思维</h3>
-                    <p>融合中国传统美学与现代设计原则，注重简洁性、可用性和视觉和谐，创造有深度的用户体验。</p>
+                    <i class="fas fa-language"></i>
+                    <h3>语言能力</h3>
+                    <ul class="skill-list">
+                        <li>英语六级(CET-6): 510分</li>
+                        <li>英语四级(CET-4): 592分</li>
+                        <li>良好的技术文档阅读能力</li>
+                        <li>流利的英语交流能力</li>
+                        <li>快速学习新技术能力</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 项目 -->
+    <!-- 项目经历 -->
     <section id="projects">
         <div class="container">
             <div class="section-title">
-                <h2>我的项目</h2>
-                <p class="section-subtitle">将技术创新与传统智慧结合，创造有意义的数字体验</p>
+                <h2>项目经历</h2>
+                <p class="section-subtitle">将理论知识转化为实践创新的成果</p>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img-container">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="水墨电商平台" class="project-img">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="智能园艺管理系统" class="project-img">
                         <div class="project-overlay">
-                            <a href="https://github.com/yourusername/ecommerce-platform" target="_blank" class="btn">查看详情</a>
+                            <a href="#contact" class="btn">了解更多</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>水墨电商平台</h3>
-                        <p>融合中国传统水墨画美学的现代电商解决方案，使用React、Node.js和MongoDB开发，结合了现代功能与传统视觉元素。</p>
+                        <div class="project-header">
+                            <h3>基于STM32的智能园艺管理系统</h3>
+                            <span class="project-role">开发者</span>
+                        </div>
+                        <div class="project-duration">2024.12 - 2024.12</div>
+                        <p class="project-description">针对传统园艺管理依赖人工、效率低的问题，设计了一款基于STM32F103C8T6的智能园艺管理系统，实现环境数据自动采集与设备智能控制。</p>
+                        <ul class="project-tasks">
+                            <li>基于STM32F103C8T6设计系统硬件架构，集成温度、土壤湿度、光照传感器</li>
+                            <li>搭建继电器控制电路与OLED显示模块，开发传感器数据采集与执行控制逻辑</li>
+                            <li>使用DMA轮询ADC采样提升采集效率，利用I2C协议驱动OLED实时显示数据</li>
+                            <li>设计自动控制策略，根据环境阈值自动启动灌溉与补光功能</li>
+                        </ul>
                         <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>水墨美学</span>
+                            <span>STM32</span>
+                            <span>嵌入式系统</span>
+                            <span>传感器</span>
+                            <span>IoT</span>
+                            <span>C语言</span>
                         </div>
                     </div>
                 </div>
+                
                 <div class="project-card">
                     <div class="project-img-container">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="禅意任务管理" class="project-img">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="AC-AC变换电源系统" class="project-img">
                         <div class="project-overlay">
-                            <a href="https://github.com/yourusername/task-manager" target="_blank" class="btn">查看详情</a>
+                            <a href="#contact" class="btn">了解更多</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>禅意任务管理</h3>
-                        <p>受中国禅宗哲学启发的任务管理工具，强调简洁、专注与心流。使用Vue.js和Express构建，结合了东方哲学与现代生产力方法。</p>
+                        <div class="project-header">
+                            <h3>高精度可调AC-AC变换电源系统</h3>
+                            <span class="project-role">核心开发者</span>
+                        </div>
+                        <div class="project-duration">2024.8 - 2024.8</div>
+                        <p class="project-description">针对传统交流调压电路谐波含量高、稳压精度差的问题，设计并实现一款基于STM32F103的高效率、宽范围可调AC-AC变换电源系统。</p>
+                        <ul class="project-tasks">
+                            <li>主导新控式交流调压拓扑选型与实现，基于STM32F103设计电压电流双环PID控制器</li>
+                            <li>通过PWM调制驱动MOSFET，实现1-35VAC宽范围输出与快速动态响应</li>
+                            <li>采用高精度互感器进行隔离采样，结合DMA传输ADC提升响应速度</li>
+                            <li>设计LC滤波网络有效抑制谐波，整机效率>85%</li>
+                        </ul>
                         <div class="project-tags">
-                            <span>Vue.js</span>
-                            <span>Express</span>
-                            <span>禅意设计</span>
-                            <span>心流</span>
+                            <span>电源设计</span>
+                            <span>STM32</span>
+                            <span>PID控制</span>
+                            <span>电路仿真</span>
+                            <span>电力电子</span>
                         </div>
                     </div>
                 </div>
+                
                 <div class="project-card">
                     <div class="project-img-container">
-                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="节气天气应用" class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="购物中心商铺推荐系统" class="project-img">
                         <div class="project-overlay">
-                            <a href="https://github.com/yourusername/weather-app" target="_blank" class="btn">查看详情</a>
+                            <a href="#contact" class="btn">了解更多</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>节气天气应用</h3>
-                        <p>结合中国传统二十四节气的天气应用，提供基于节气的生活建议和健康提示。使用现代API技术与传统文化知识相结合。</p>
+                        <div class="project-header">
+                            <h3>购物中心商铺推荐系统</h3>
+                            <span class="project-role">发明人</span>
+                        </div>
+                        <div class="project-duration">2024.11 - 2024.11</div>
+                        <p class="project-description">基于购物中心的室内环境，结合优化的路径规划算法与推荐算法给用户提供更加便捷的多目标同时推荐及导航的服务。</p>
+                        <ul class="project-tasks">
+                            <li>对基本的迪杰斯特拉算法进行优化，由单目标多路径规划优化为多目标多路径规划</li>
+                            <li>结合推荐算法实现按照推荐排名给用户提供各个目标点的路径</li>
+                            <li>发明专利：购物中心商铺推荐方法、装置、设备及介质</li>
+                            <li>实现智能导航与个性化推荐相结合的系统设计</li>
+                        </ul>
                         <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>Weather API</span>
-                            <span>二十四节气</span>
-                            <span>传统文化</span>
+                            <span>算法设计</span>
+                            <span>路径规划</span>
+                            <span>推荐系统</span>
+                            <span>发明专利</span>
+                            <span>Python</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 奖项荣誉 -->
+    <section id="awards" class="awards-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>奖项荣誉</h2>
+                <p class="section-subtitle">在学术竞赛与实践中获得的认可</p>
+            </div>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-title">第九届全国大学生网络与信息技术赛项分区二等奖</div>
+                    <div class="award-org">全国大学生网络与信息技术大赛组委会</div>
+                    <div class="award-date">2025年</div>
+                </div>
+                <div class="award-card">
+                    <div class="award-title">第三十二届全国大学生数学建模竞赛广东省赛区三等奖</div>
+                    <div class="award-org">全国大学生数学建模竞赛组委会</div>
+                    <div class="award-date">2024年</div>
+                </div>
+                <div class="award-card">
+                    <div class="award-title">第十六届全国大学生数学竞赛广东省赛区三等奖</div>
+                    <div class="award-org">中国数学会</div>
+                    <div class="award-date">2024年</div>
+                </div>
+                <div class="award-card">
+                    <div class="award-title">广东工业大学优秀个人一等奖学金</div>
+                    <div class="award-org">广东工业大学</div>
+                    <div class="award-date">2022年</div>
+                </div>
+                <div class="award-card">
+                    <div class="award-title">"外研社·国才杯"全国英语阅读大赛校级初赛一等奖</div>
+                    <div class="award-org">外研社·国才杯组委会</div>
+                    <div class="award-date">2022年</div>
                 </div>
             </div>
         </div>
@@ -1041,19 +1343,20 @@
         <div class="container">
             <div class="section-title">
                 <h2>联系我</h2>
-                <p class="section-subtitle">如果您对技术与传统的融合感兴趣，或想探讨合作可能，欢迎联系</p>
+                <p class="section-subtitle">期待与您在技术领域的交流与合作</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>邮箱: <strong>ming.zhang@example.com</strong></p>
-                    <p>位置: <strong>中国，杭州</strong></p>
-                    <p>理念: <strong>技术为用，人文为本，创新为桥</strong></p>
+                    <p><i class="fas fa-phone"></i> <strong>手机</strong>: +86 13539820153</p>
+                    <p><i class="fas fa-envelope"></i> <strong>邮箱</strong>: 2689539687@qq.com</p>
+                    <p><i class="fas fa-graduation-cap"></i> <strong>学校</strong>: 广东工业大学</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>地点</strong>: 中国，广州</p>
+                    
                     <div class="social-links">
-                        <a href="https://github.com/yourusername" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://twitter.com/yourusername" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="mailto:ming.zhang@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
-                        <a href="https://weibo.com/yourusername" target="_blank" class="social-link"><i class="fab fa-weibo"></i></a>
+                        <a href="mailto:2689539687@qq.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/luotaiyu" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/luotaiyu" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
                     </div>
                 </div>
             </div>
@@ -1064,12 +1367,12 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">明心见性</div>
-                <p>在数字世界中寻找传统智慧，在创新中保持文化根基</p>
+                <div class="footer-logo">骆泰宇</div>
+                <p>电子信息工程师 | 嵌入式系统开发者</p>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 张明. 保留所有权利.</p>
-                <p style="margin-top: 10px;">此网页融合现代科技风格与中国传统美学</p>
+                <p>&copy; 2024 骆泰宇. 保留所有权利.</p>
+                <p style="margin-top: 10px;">本网页融合现代电子科技与中国传统美学设计</p>
             </div>
         </div>
     </footer>
@@ -1158,40 +1461,9 @@
         // 初始化水墨斑点
         createInkBlots();
 
-        // 鼠标跟随效果 - 简约水墨点
-        document.addEventListener('mousemove', function(e) {
-            // 限制创建频率
-            if (Math.random() > 0.7) {
-                const dot = document.createElement('div');
-                dot.className = 'ink-blot';
-                
-                const size = Math.random() * 20 + 5;
-                const color = `rgba(${Math.random() > 0.5 ? '42, 92, 170' : '201, 58, 58'}, ${Math.random() * 0.1 + 0.05})`;
-                
-                dot.style.width = `${size}px`;
-                dot.style.height = `${size}px`;
-                dot.style.left = `${e.pageX - size/2}px`;
-                dot.style.top = `${e.pageY - size/2}px`;
-                dot.style.background = `radial-gradient(circle, ${color} 0%, transparent 70%)`;
-                dot.style.transition = 'opacity 1s ease';
-                
-                document.body.appendChild(dot);
-                
-                // 逐渐消失并移除
-                setTimeout(() => {
-                    dot.style.opacity = '0';
-                    setTimeout(() => {
-                        if (dot.parentNode) {
-                            dot.parentNode.removeChild(dot);
-                        }
-                    }, 1000);
-                }, 100);
-            }
-        });
-
         // 滚动动画效果
         function checkScroll() {
-            const elements = document.querySelectorAll('.skill-card, .project-card, .about-text');
+            const elements = document.querySelectorAll('.skill-card, .project-card, .about-text, .award-card');
             
             elements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
@@ -1205,7 +1477,7 @@
         }
 
         // 初始化元素状态
-        document.querySelectorAll('.skill-card, .project-card, .about-text').forEach(element => {
+        document.querySelectorAll('.skill-card, .project-card, .about-text, .award-card').forEach(element => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(30px)';
             element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
